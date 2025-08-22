@@ -1,22 +1,24 @@
-### Network Scanning and Port Discovery Tool (Python)
+### **Ağ Taraması ve Port Tespiti Aracı (Python)**
 
-This repository hosts a simple but functional network scanning and port discovery tool developed using the Python programming language. The main goal of the project is to identify open TCP ports on a target IP address or domain name and provide basic information about those ports. This tool is an ideal starting point for anyone interested in cybersecurity, students who want to learn about network protocols, or those looking for a simple network discovery tool.
+Bu depo, Python programlama dilini kullanarak geliştirilmiş basit ama işlevsel bir ağ tarama ve port tespit aracını barındırır. Projenin temel amacı, bir hedef IP adresi veya alan adı üzerindeki açık TCP portlarını belirlemek ve bu portlar hakkında temel bilgiler sunmaktır. Bu araç, siber güvenlik alanına ilgi duyanlar, ağ protokolleri hakkında bilgi edinmek isteyen öğrenciler veya basit bir ağ keşif aracı arayanlar için ideal bir başlangıç noktasıdır.
 
-**Project Purpose and Importance**
+**Proje Amacı ve Önemi**
 
-Modern network infrastructures, servers, and services communicate over various ports. Open ports show which services a server (for example, a web server, an SSH server, or a database) is offering to the outside world. This tool allows a system administrator or a security analyst to check if devices on their network are leaving unexpected ports open. Malware often creates backdoors by opening hidden ports. This tool can help in the rapid detection of such potential security vulnerabilities.
+Modern ağ altyapıları, sunucular ve hizmetler, çeşitli portlar üzerinden iletişim kurar. Açık portlar, bir sunucunun hangi hizmetleri (örneğin, bir web sunucusu, bir SSH sunucusu veya bir veritabanı) dış dünyaya sunduğunu gösterir. Bu araç, bir sistem yöneticisinin veya güvenlik analistinin, kendi ağındaki cihazların beklenmedik portları açık bırakıp bırakmadığını kontrol etmesine olanak tanır. Kötü amaçlı yazılımlar genellikle gizli portları açarak arka kapılar oluşturur. Bu araç, bu tür potansiyel güvenlik zafiyetlerinin hızlı bir şekilde tespit edilmesine yardımcı olabilir.
 
-**Key Features**
+**Temel Özellikler**
 
-* **Flexible Target Selection:** The user can enter an IP address (e.g., `192.168.1.1`) or a domain name (e.g., `example.com`) for the scan. The program automatically converts the domain name to an IP address.
-* **Customizable Port Range:** It defaults to scanning well-known ports from 1-1024, but this range can be easily changed and extended.
-* **Multi-Connection Check:** It uses the `socket` module to attempt a separate connection for each port.
-* **Effective Timeout Management:** It includes a timeout mechanism to prevent delays during connection attempts, so the scan doesn't hang and completes efficiently.
-* **Clear Reporting:** It reports open ports and their associated services (e.g., `Port 80 open [HTTP]`) in an easy-to-understand format.
-* **Error Handling:** It provides user-friendly error messages for situations like an invalid target input or network connection issues.
+* **Esnek Hedef Belirleme:** Kullanıcı, tarama için bir IP adresi (örneğin, `192.168.1.1`) veya bir alan adı (örneğin, `example.com`) girebilir. Program, alan adını otomatik olarak IP adresine dönüştürür.
+* **Özelleştirilebilir Port Aralığı:** Varsayılan olarak 1-1024 arasındaki bilinen portları tarar, ancak bu aralık kolayca değiştirilebilir ve genişletilebilir.
+* **Çoklu Bağlantı Kontrolü:** `socket` modülünü kullanarak her bir port için ayrı bir bağlantı denemesi yapar.
+* **Etkin Zaman Aşımı Yönetimi:** Bağlantı denemelerinde yaşanan gecikmeleri önlemek için bir zaman aşımı (timeout) mekanizması içerir, böylece tarama işlemi donmaz ve verimli bir şekilde tamamlanır.
+* **Anlaşılır Raporlama:** Açık bulunan portları ve varsa ilişkili hizmetleri (örneğin, `Port 80 açık [HTTP]`) anlaşılır bir formatta raporlar.
+* **Hata Yönetimi:** Geçersiz bir hedef girişi veya ağ bağlantı sorunları gibi durumlar için kullanıcı dostu hata mesajları sunar.
 
-**Technical Details**
+**Teknik Detaylar**
 
-This project leverages the power of Python's standard `socket` module. It's built on the fundamental principles of the TCP/IP protocol and socket programming. The code has a clean and understandable structure, making it easy for both beginners and experienced developers to read and modify.
+Bu proje, Python'ın standart kütüphanelerinden olan `socket` modülünün gücünden yararlanır. TCP/IP protokolü ve soket programlamanın temel ilkeleri üzerine inşa edilmiştir. Kod, temiz ve anlaşılır bir yapıya sahiptir, bu sayede hem yeni başlayanlar hem de deneyimli geliştiriciler tarafından rahatlıkla okunabilir ve üzerinde değişiklik yapılabilir.
 
-By using this tool, you can perform network discovery, identify potential security vulnerabilities, and get hands-on practice with basic network communication principles. Contributions to further develop the project and add new features are always welcome.
+Bu aracı kullanarak, ağ keşifleri yapabilir, potansiyel güvenlik açıklarını belirleyebilir ve temel ağ iletişimi prensiplerini uygulamalı olarak öğrenebilirsiniz. Projenin daha fazla geliştirilmesi ve yeni özelliklerin eklenmesi için katkılarınız her zaman bekleriz.
+
+-
